@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Main {
+public class Controler {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Conta conta = new Conta();

@@ -12,7 +12,7 @@ public class Conta {
         this.saldo = saldo;
         this.id= nextId;
         nextId += 1;
-        this.totalDeContas = totalDeContas;
+        
     }
     public Conta(){
 
@@ -22,7 +22,7 @@ public class Conta {
                "Numero da conta: " + this.id + "Saldo:" + this.saldo;
     }
 
-    //Questão 2:
+    
     public void setTitular(String titular) {
         this.titular = titular;
     }
