@@ -1,5 +1,4 @@
-package s03ep01;
-
+package Pokemongo;
 public class PokemonGo {
 
 
@@ -18,10 +17,14 @@ public class PokemonGo {
 	
 	
 	
-	poke.setAtaques (a)
+	poke.setAtaques (a);
 	
-	poke.impressaoAtaques();
-	poke.posAtaque("chute")
+	poke.imprecaoAtaques();
+	poke.posAtaque("chute");
+	System.out.println("poscaoAtaques"+ pos);
+	
+	poke.nomeAtaques(1);
+	
 	}
 
 }
