@@ -8,11 +8,11 @@ class MeuRato{
 	boolean correr;
 	
 	
-	void DaNome (String nome) {
+	void daNome (String nome) {
 		this.nome = nome;
 		System.out.println("Nome do Rato: "+this.nome);
 	}
-	void NomearDoenca (String doenca) {
+	void nomearDoenca (String doenca) {
 		this.doenca = doenca;
 		this.doente = true;
 		if (this.doenca == null) {
@@ -20,7 +20,7 @@ class MeuRato{
 		}
 	}
 	
-	void EstaDoente () {
+	void estaDoente () {
 		if (doente == true) {
 			System.out.println("Rato contaminado");
 		}else {
@@ -29,14 +29,14 @@ class MeuRato{
 		}
 	}
 	
-	void QualVelocidade(int velocidade){
+	void qualVelocidade(int velocidade){
 		this.velocidade = velocidade;
 		if (this.velocidade > 0) {
 			this.correr = true;
 		}
 	}
 	
-	void Correndo () {
+	void correndo () {
 		if (correr == true) {
 			System.out.println("Esta correndo o rato");	
 		}else {
@@ -67,13 +67,13 @@ public class Rato {
             }else if (ui[0].equals("show")) {
             	System.out.println(ratinho);
             }else if (ui[0].equals("nome")) {
-            	ratinho.DaNome(ui[1]);
+            	ratinho.daNome(ui[1]);
             }else if(ui[0].equals("doenca")) {
-            	ratinho.NomearDoenca(ui[1]);
+            	ratinho.nomearDoenca(ui[1]);
             }else if(ui[0].equals("diagnostico")) {
-            	ratinho.EstaDoente();
+            	ratinho.estaDoente();
             }else if(ui[0].equals("fugindo")) {
-            	ratinho.Correndo();
+            	ratinho.correndo();
             	}
             }
 		}
